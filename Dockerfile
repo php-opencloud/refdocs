@@ -15,6 +15,5 @@ COPY build.sh /usr/src
 
 # Build docs
 RUN mkdir -p /var/www/tmp
-RUN chown -R www-data /var/www/tmp
-RUN chown -R www-data /var/www/html
+RUN chown -R www-data /var/www/tmp /var/www/html
 RUN su -c "bash /usr/src/build.sh" -s /bin/sh www-data
