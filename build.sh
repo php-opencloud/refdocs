@@ -17,4 +17,5 @@ rm -rf ./doc/api-docs/cache
 ./vendor/bin/sami.php update ./doc/api-docs/config.php
 
 # Shift tmp dir to prod
-mv ./doc/api-docs/build /var/www/html/build
+rm -rf /var/www/html/build
+mv ./doc/api-docs/build /var/www/html
