@@ -5,11 +5,11 @@ cd /var/www/tmp
 if [ -d "openstack" ]; then
   cd openstack
   git pull
-  composer update --prefer-source
+  composer update --prefer-source --no-interaction
 else
   git clone https://github.com/php-opencloud/openstack
   cd openstack
-  composer install --prefer-source
+  composer install --prefer-source --no-interaction
 fi
 
 # Build docs
